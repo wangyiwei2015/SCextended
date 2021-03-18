@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D26B41426021DB00079FB18 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D26B41326021DB00079FB18 /* Intents.framework */; };
+		1D26B41726021DB00079FB18 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B41626021DB00079FB18 /* IntentHandler.swift */; };
+		1D26B41B26021DB00079FB18 /* SCext.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1D26B41126021DB00079FB18 /* SCext.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1D26B42526021DEF0079FB18 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B42426021DEF0079FB18 /* Intents.intentdefinition */; };
+		1D26B433260222F90079FB18 /* SetBrightnessHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B432260222F90079FB18 /* SetBrightnessHandler.swift */; };
+		1D26B438260226840079FB18 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B42426021DEF0079FB18 /* Intents.intentdefinition */; };
+		1D26B46A2602365F0079FB18 /* WriteConfigHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B4692602365F0079FB18 /* WriteConfigHandler.swift */; };
+		1D26B46E2602398D0079FB18 /* ReadConfigHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B46D2602398D0079FB18 /* ReadConfigHandler.swift */; };
 		1D96363525C565F600FA8B3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96363425C565F600FA8B3B /* AppDelegate.swift */; };
 		1D96363725C565F600FA8B3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96363625C565F600FA8B3B /* SceneDelegate.swift */; };
 		1D96363925C565F600FA8B3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96363825C565F600FA8B3B /* ViewController.swift */; };
@@ -15,7 +23,40 @@
 		1D96364125C565F900FA8B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D96363F25C565F900FA8B3B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1D26B41926021DB00079FB18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D96362925C565F600FA8B3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D26B41026021DB00079FB18;
+			remoteInfo = SCext;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D26B41F26021DB00079FB18 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1D26B41B26021DB00079FB18 /* SCext.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1D26B4032602180F0079FB18 /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
+		1D26B41126021DB00079FB18 /* SCext.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SCext.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D26B41326021DB00079FB18 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		1D26B41626021DB00079FB18 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		1D26B41826021DB00079FB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D26B42426021DEF0079FB18 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		1D26B432260222F90079FB18 /* SetBrightnessHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBrightnessHandler.swift; sourceTree = "<group>"; };
+		1D26B4692602365F0079FB18 /* WriteConfigHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteConfigHandler.swift; sourceTree = "<group>"; };
+		1D26B46D2602398D0079FB18 /* ReadConfigHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadConfigHandler.swift; sourceTree = "<group>"; };
 		1D96363125C565F600FA8B3B /* Shortcuts-Extended.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shortcuts-Extended.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D96363425C565F600FA8B3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D96363625C565F600FA8B3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +68,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D26B40E26021DB00079FB18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D26B41426021DB00079FB18 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D96362E25C565F600FA8B3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +86,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D26B41226021DB00079FB18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D26B41326021DB00079FB18 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D26B41526021DB00079FB18 /* SCext */ = {
+			isa = PBXGroup;
+			children = (
+				1D26B42426021DEF0079FB18 /* Intents.intentdefinition */,
+				1D26B41626021DB00079FB18 /* IntentHandler.swift */,
+				1D26B41826021DB00079FB18 /* Info.plist */,
+				1D26B432260222F90079FB18 /* SetBrightnessHandler.swift */,
+				1D26B4692602365F0079FB18 /* WriteConfigHandler.swift */,
+				1D26B46D2602398D0079FB18 /* ReadConfigHandler.swift */,
+			);
+			path = SCext;
+			sourceTree = "<group>";
+		};
 		1D96362825C565F600FA8B3B = {
 			isa = PBXGroup;
 			children = (
+				1D26B4032602180F0079FB18 /* Notes.md */,
 				1D96363325C565F600FA8B3B /* Shortcuts-Extended */,
+				1D26B41526021DB00079FB18 /* SCext */,
+				1D26B41226021DB00079FB18 /* Frameworks */,
 				1D96363225C565F600FA8B3B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				1D96363125C565F600FA8B3B /* Shortcuts-Extended.app */,
+				1D26B41126021DB00079FB18 /* SCext.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +134,8 @@
 				1D96363625C565F600FA8B3B /* SceneDelegate.swift */,
 				1D96363825C565F600FA8B3B /* ViewController.swift */,
 				1D96363A25C565F600FA8B3B /* Main.storyboard */,
-				1D96363D25C565F900FA8B3B /* Assets.xcassets */,
 				1D96363F25C565F900FA8B3B /* LaunchScreen.storyboard */,
+				1D96363D25C565F900FA8B3B /* Assets.xcassets */,
 				1D96364225C565F900FA8B3B /* Info.plist */,
 			);
 			path = "Shortcuts-Extended";
@@ -70,6 +144,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1D26B41026021DB00079FB18 /* SCext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D26B41C26021DB00079FB18 /* Build configuration list for PBXNativeTarget "SCext" */;
+			buildPhases = (
+				1D26B40D26021DB00079FB18 /* Sources */,
+				1D26B40E26021DB00079FB18 /* Frameworks */,
+				1D26B40F26021DB00079FB18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCext;
+			productName = SCext;
+			productReference = 1D26B41126021DB00079FB18 /* SCext.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1D96363025C565F600FA8B3B /* Shortcuts-Extended */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D96364525C565F900FA8B3B /* Build configuration list for PBXNativeTarget "Shortcuts-Extended" */;
@@ -77,10 +168,12 @@
 				1D96362D25C565F600FA8B3B /* Sources */,
 				1D96362E25C565F600FA8B3B /* Frameworks */,
 				1D96362F25C565F600FA8B3B /* Resources */,
+				1D26B41F26021DB00079FB18 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1D26B41A26021DB00079FB18 /* PBXTargetDependency */,
 			);
 			name = "Shortcuts-Extended";
 			productName = "Shortcuts-Extended";
@@ -93,9 +186,12 @@
 		1D96362925C565F600FA8B3B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					1D26B41026021DB00079FB18 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					1D96363025C565F600FA8B3B = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -115,11 +211,19 @@
 			projectRoot = "";
 			targets = (
 				1D96363025C565F600FA8B3B /* Shortcuts-Extended */,
+				1D26B41026021DB00079FB18 /* SCext */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D26B40F26021DB00079FB18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D96362F25C565F600FA8B3B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,10 +237,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1D26B40D26021DB00079FB18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D26B42526021DEF0079FB18 /* Intents.intentdefinition in Sources */,
+				1D26B41726021DB00079FB18 /* IntentHandler.swift in Sources */,
+				1D26B46E2602398D0079FB18 /* ReadConfigHandler.swift in Sources */,
+				1D26B46A2602365F0079FB18 /* WriteConfigHandler.swift in Sources */,
+				1D26B433260222F90079FB18 /* SetBrightnessHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D96362D25C565F600FA8B3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D26B438260226840079FB18 /* Intents.intentdefinition in Sources */,
 				1D96363925C565F600FA8B3B /* ViewController.swift in Sources */,
 				1D96363525C565F600FA8B3B /* AppDelegate.swift in Sources */,
 				1D96363725C565F600FA8B3B /* SceneDelegate.swift in Sources */,
@@ -144,6 +261,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D26B41A26021DB00079FB18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D26B41026021DB00079FB18 /* SCext */;
+			targetProxy = 1D26B41926021DB00079FB18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1D96363A25C565F600FA8B3B /* Main.storyboard */ = {
@@ -165,6 +290,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1D26B41D26021DB00079FB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JS2ME2LTBF;
+				INFOPLIST_FILE = SCext/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyw.extracuts.SCext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D26B41E26021DB00079FB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JS2ME2LTBF;
+				INFOPLIST_FILE = SCext/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyw.extracuts.SCext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1D96364325C565F900FA8B3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -284,6 +451,7 @@
 		1D96364625C565F900FA8B3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,7 +462,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wyw.Shortcuts-Extended";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyw.extracuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,6 +473,7 @@
 		1D96364725C565F900FA8B3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,7 +484,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wyw.Shortcuts-Extended";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyw.extracuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,6 +495,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D26B41C26021DB00079FB18 /* Build configuration list for PBXNativeTarget "SCext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D26B41D26021DB00079FB18 /* Debug */,
+				1D26B41E26021DB00079FB18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1D96362C25C565F600FA8B3B /* Build configuration list for PBXProject "Shortcuts-Extended" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
