@@ -4,12 +4,11 @@ wlan.ssid
 bt.ison
 battery.flow
 device.*
-disk
-darkmode.ison
+[ok]disk.usage
 photo.album.name.count
 
 ### Do
-[ok]screenbrightness
+[del]screenbrightness
 
 ### DoReturn
 traceroute

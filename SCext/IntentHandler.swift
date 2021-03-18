@@ -11,12 +11,12 @@ class IntentHandler: INExtension {
     
     override func handler(for intent: INIntent) -> Any {
         switch intent {
-        case is SetBrightnessIntent:
-            return SetBrightnessHandler()
         case is WriteConfigIntent:
             return WriteConfigHandler()
         case is ReadConfigIntent:
             return ReadConfigHandler()
+        case is GetDiskInfoIntent:
+            return GetDiskInfoHandler()
         default:
             return self
         }

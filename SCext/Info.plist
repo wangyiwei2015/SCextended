@@ -30,8 +30,10 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array>
+				<string>GetDiskInfoIntent</string>
+				<string>GetMediaCountInAlbumIntent</string>
+				<string>GetPhotoAlbumNamesIntent</string>
 				<string>ReadConfigIntent</string>
-				<string>SetBrightnessIntent</string>
 				<string>WriteConfigIntent</string>
 			</array>
 		</dict>

@@ -22,10 +22,23 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Use camera for powerful features</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Use network for powerful features</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Use photos for powerful features</string>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>GetDiskInfoIntent</string>
+		<string>GetMediaCountInAlbumIntent</string>
+		<string>GetPhotoAlbumNamesIntent</string>
 		<string>ReadConfigIntent</string>
-		<string>SetBrightnessIntent</string>
 		<string>WriteConfigIntent</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>

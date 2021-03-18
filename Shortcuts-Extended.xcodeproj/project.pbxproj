@@ -11,10 +11,14 @@
 		1D26B41726021DB00079FB18 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B41626021DB00079FB18 /* IntentHandler.swift */; };
 		1D26B41B26021DB00079FB18 /* SCext.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1D26B41126021DB00079FB18 /* SCext.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1D26B42526021DEF0079FB18 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B42426021DEF0079FB18 /* Intents.intentdefinition */; };
-		1D26B433260222F90079FB18 /* SetBrightnessHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B432260222F90079FB18 /* SetBrightnessHandler.swift */; };
 		1D26B438260226840079FB18 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B42426021DEF0079FB18 /* Intents.intentdefinition */; };
 		1D26B46A2602365F0079FB18 /* WriteConfigHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B4692602365F0079FB18 /* WriteConfigHandler.swift */; };
 		1D26B46E2602398D0079FB18 /* ReadConfigHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B46D2602398D0079FB18 /* ReadConfigHandler.swift */; };
+		1D26B48226031C7F0079FB18 /* GetDiskInfoHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B48126031C7F0079FB18 /* GetDiskInfoHandler.swift */; };
+		1D26B498260322ED0079FB18 /* GetPhotoAlbumNamesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B497260322ED0079FB18 /* GetPhotoAlbumNamesHandler.swift */; };
+		1D26B49E260323130079FB18 /* GetMediaCountInAlbumHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B49D260323130079FB18 /* GetMediaCountInAlbumHandler.swift */; };
+		1D26B4A2260323840079FB18 /* PhotosHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B4A1260323840079FB18 /* PhotosHelper.swift */; };
+		1D26B4AB260330760079FB18 /* PhotosHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26B4A1260323840079FB18 /* PhotosHelper.swift */; };
 		1D96363525C565F600FA8B3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96363425C565F600FA8B3B /* AppDelegate.swift */; };
 		1D96363725C565F600FA8B3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96363625C565F600FA8B3B /* SceneDelegate.swift */; };
 		1D96363925C565F600FA8B3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D96363825C565F600FA8B3B /* ViewController.swift */; };
@@ -54,9 +58,12 @@
 		1D26B41626021DB00079FB18 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		1D26B41826021DB00079FB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D26B42426021DEF0079FB18 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
-		1D26B432260222F90079FB18 /* SetBrightnessHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBrightnessHandler.swift; sourceTree = "<group>"; };
 		1D26B4692602365F0079FB18 /* WriteConfigHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteConfigHandler.swift; sourceTree = "<group>"; };
 		1D26B46D2602398D0079FB18 /* ReadConfigHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadConfigHandler.swift; sourceTree = "<group>"; };
+		1D26B48126031C7F0079FB18 /* GetDiskInfoHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDiskInfoHandler.swift; sourceTree = "<group>"; };
+		1D26B497260322ED0079FB18 /* GetPhotoAlbumNamesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotoAlbumNamesHandler.swift; sourceTree = "<group>"; };
+		1D26B49D260323130079FB18 /* GetMediaCountInAlbumHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMediaCountInAlbumHandler.swift; sourceTree = "<group>"; };
+		1D26B4A1260323840079FB18 /* PhotosHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosHelper.swift; sourceTree = "<group>"; };
 		1D96363125C565F600FA8B3B /* Shortcuts-Extended.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shortcuts-Extended.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D96363425C565F600FA8B3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D96363625C565F600FA8B3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,9 +107,12 @@
 				1D26B42426021DEF0079FB18 /* Intents.intentdefinition */,
 				1D26B41626021DB00079FB18 /* IntentHandler.swift */,
 				1D26B41826021DB00079FB18 /* Info.plist */,
-				1D26B432260222F90079FB18 /* SetBrightnessHandler.swift */,
 				1D26B4692602365F0079FB18 /* WriteConfigHandler.swift */,
 				1D26B46D2602398D0079FB18 /* ReadConfigHandler.swift */,
+				1D26B48126031C7F0079FB18 /* GetDiskInfoHandler.swift */,
+				1D26B497260322ED0079FB18 /* GetPhotoAlbumNamesHandler.swift */,
+				1D26B49D260323130079FB18 /* GetMediaCountInAlbumHandler.swift */,
+				1D26B4A1260323840079FB18 /* PhotosHelper.swift */,
 			);
 			path = SCext;
 			sourceTree = "<group>";
@@ -242,10 +252,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D26B42526021DEF0079FB18 /* Intents.intentdefinition in Sources */,
+				1D26B49E260323130079FB18 /* GetMediaCountInAlbumHandler.swift in Sources */,
 				1D26B41726021DB00079FB18 /* IntentHandler.swift in Sources */,
 				1D26B46E2602398D0079FB18 /* ReadConfigHandler.swift in Sources */,
 				1D26B46A2602365F0079FB18 /* WriteConfigHandler.swift in Sources */,
-				1D26B433260222F90079FB18 /* SetBrightnessHandler.swift in Sources */,
+				1D26B498260322ED0079FB18 /* GetPhotoAlbumNamesHandler.swift in Sources */,
+				1D26B48226031C7F0079FB18 /* GetDiskInfoHandler.swift in Sources */,
+				1D26B4A2260323840079FB18 /* PhotosHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D26B438260226840079FB18 /* Intents.intentdefinition in Sources */,
+				1D26B4AB260330760079FB18 /* PhotosHelper.swift in Sources */,
 				1D96363925C565F600FA8B3B /* ViewController.swift in Sources */,
 				1D96363525C565F600FA8B3B /* AppDelegate.swift in Sources */,
 				1D96363725C565F600FA8B3B /* SceneDelegate.swift in Sources */,
