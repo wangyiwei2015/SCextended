@@ -35,8 +35,11 @@ class PhotosHelper: NSObject {
     }
     
     static func listAlbums() -> [String] {
-        print(PHCollectionList.fetchTopLevelUserCollections(with: nil).firstObject?.localizedTitle)
-        return []
+        var list = [String]()
+        PHCollectionList.fetchTopLevelUserCollections(with: nil).enumerateObjects({collection, index, _ in
+            list.append(collection.localizedTitle ?? "")
+        })
+        return list
     }
     
     static func count(for album: String) -> Int? {
